@@ -1,0 +1,564 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* HEADER ------------------------------------------------*/
+.header {
+    background-color: #0D1BBD;
+    display: flex;
+    height: 65px;  
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    margin-right: 15%;  
+}
+
+.logo > img {
+   padding-left:10px ;
+   height: 40px;
+}
+
+.search {
+    width: 40%;
+    margin-left: 0;
+    position: relative;
+    left: -110px;
+}
+
+.search > input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.fa-user ,.fa-heart, .fa-cart-shopping, .fa-location-dot {
+    color: white;
+    font-size: 1.3rem;  
+}
+
+.fa-cart-shopping {
+    margin-right: 15px;
+}
+
+/* MENU ----------------------------------------------------- */
+.menu {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdown {
+    display: block;
+    align-items: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown > a  {
+    background-color: white;
+    border: none; 
+    top: 100px;
+    margin-left: 10px;
+    cursor:pointer;
+    font-size:medium;
+    height: 40px;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 10px;  
+    color: black;   
+}
+
+.dropdown > a:hover {
+    cursor:pointer;
+    color: aliceblue;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown:hover {
+    z-index: 1;
+}
+.dropdown-content {
+    position: absolute;
+    background-color:white;
+    padding-left:30px ;
+    padding-top: 50px;
+    padding-right: 60px;  
+    display: none;
+    flex-direction: column;
+    top: 0;
+    width: 200px;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: flex;
+   
+}
+
+.dropdown-content > li {
+    padding-bottom: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+    display: block;    
+}
+
+.dropdown-content > li:hover { 
+    color: #0D1BBD;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.small-icons {
+    display: none;
+}
+
+.menu-button  {
+    display: none;
+}
+
+.menu2 {
+    display: none;
+}
+
+/* SLIDER IMAGE ------------------------------------------------ */
+.slider-outer {
+   display: flex;
+   width: 100%;
+   align-items: center;
+}
+
+
+.inner1, .inner3 {
+    width: 2%;
+    font-size: 1.5rem;
+}
+
+.inner2 {
+    width: 96%;
+    height: 350px;
+    background-color: rgba(10, 36, 65, 0.795);
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.inner2 > img {
+    height: 300px;
+    
+}
+
+.slider-title {
+    color: white;
+    font-size:2REM;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CATEGORIES ------------------------------------------------------ */
+.caategories {
+    justify-content: center;
+    margin-left: 30px;
+    display: flex;
+
+}
+.categories-title {
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.categories-title > span{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+}
+
+.categories-inner{
+    width: 96%;
+    margin-left: 2%;
+    justify-content: space-between;
+    
+    display: flex;
+}
+
+.lol {
+    /* width: 210px;*/
+    height: 370px; 
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    border-radius: 10px;
+    width: 16%;
+}
+
+.categories-spiti {
+    background-image: url(../../img/Eidi-Spitiou.jpg);
+}
+
+.categories-tech {
+    background-image: url(../../img/technologia_01.jpg);
+}
+
+.categories-games {
+    background-image: url(../../img/paixnidia.jpg);
+}
+
+.categories-gym {
+    background-image: url(../../img/Eidi-gymnastikis_02.jpg);
+}
+
+.categories-omorfia {
+    background-image: url(../../img/prosopiki-frodida-_-Omorfia.jpg);
+}
+
+.categories-vivlia {
+    background-image: url(../../img/vivlia-2-218x370.png);
+}
+
+.lol > span {
+    margin-top: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.categories2 {
+    display: none;
+}
+/* FOOTER ------------------------------------------------------------- */
+
+.footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+    background-color: #0D1BBD;
+    display: flex;
+}
+
+.newsletter-form {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 50%;
+}
+
+.newsletter-text {
+    font-size: 1.4rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.input-newsletter{
+    display: flex;
+}
+.input-newsletter > input {
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.input-newsletter > button {
+    height: 48px;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    margin-left: 20px;
+    border: white solid 1px;
+    color: whitesmoke;
+    background-color: #0D1BBD;
+    cursor: pointer;
+}
+
+.input-newsletter > button:hover {
+    background-color: white;
+    color: #0D1BBD;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.social {
+    display: block;
+    justify-content: space-around;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15%
+}
+
+.social-text >span {
+    font-size: 1.4rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    top:50px;
+    right: 150px;
+}
+
+.social-icons {
+    font-size: 1.4rem;
+    color: white;
+    right: 150px;
+    top:120px;
+    justify-content: space-between;
+    display: flex;
+    width: 200px;
+    margin-top: 15px;
+}
+
+.fa-brands {
+    justify-content: space-between
+}
+
+@media (width > 1550px) {
+    .slider-outer, .categories {
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .social {
+        margin-left: 25%;
+    }
+}
+
+@media (width < 1100px ) {
+    .slider-title > span {
+        font-size: 1.4rem;
+    }
+}
+
+@media(width < 950px) {
+    .inner2 {
+        display: block;
+        position: relative;
+        align-items: center;
+    }
+
+    .inner2 > img {
+        height: 70%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        bottom: 5PX;
+        left: 10PX;
+        right: 10PX;
+    } 
+
+    .slider-title {
+        position: absolute;
+        top: 10px;
+        right: 20%;
+        left: 20%; 
+        text-align: center;
+    }
+
+    .lol > span {
+        font-size:0.9rem;
+    }
+
+    .social-text > span , .social-icons {
+        right:40px;
+    }
+
+    .lol {
+        height: 300px;
+    }
+}
+
+@media (width < 750px) {
+    .logo > img {
+        height: 30px;
+    }
+
+    .search {
+        left: -15px;
+        width: 60%;
+    }
+
+    .menu {
+        width: 100%;
+        position: relative;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    button {
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .dropdown > a{
+        display: none;
+        /* position: relative; */
+    }
+
+    .menu2 {
+        width: 100%;
+        
+    }
+
+    .dropdown-content2 {
+        list-style: none;
+        margin-left: 50px;
+    }
+    
+    .dropdown-content2 > li  {
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .track-icon, .account , .liked , .basket {
+        display: none;
+    }
+
+    .small-icons {
+        display: flex;
+        color: #0D1BBD;
+        justify-content: space-between;
+        margin-left: 30px; 
+        width: 50%;
+        margin-right: 5px;
+    }
+
+    .menu-icons > a > i {
+        color:#0D1BBD;
+    }
+
+    .categories{
+        display: none;
+    }
+
+    .categories2 {
+        display: block;
+    }
+    .categories-title2 {
+        margin-top: 10px;
+    }
+
+    .categories-title2 > span {
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 15px;
+        
+    }
+
+    .categories-inner2{
+        width: 96%;
+        margin-left: 2%;
+        justify-content: space-between;
+        display: block;
+    }
+
+    .categories-row, .categories-row2 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    
+    .lol2 {
+        height: 180px; 
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        border-radius: 10px;
+        width: 32%;
+    }
+
+    .lol2 > span {
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        margin-top: 10px;
+        font-family:Arial, Helvetica, sans-serif ;
+        font-weight: 600;
+       font-size: 0.9rem;
+        
+    }
+
+    .footer {
+        display: block;
+        height: 320px;
+        width: 100%;
+    }
+
+    .newsletter-form, .social  {
+        width: 80%;
+        padding-top: 20px;
+
+    }
+
+    .newsletter-form, .social {
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
+    .newsletter-text {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .social {
+        /* text-align: center; */
+        margin-top: 20PX;
+        display: flex;
+    }
+
+    .social-text > span {
+        font-size: 1rem;
+    }
+
+    .social-icons {
+        width: 40%;
+        margin-top: 0;
+    }
+
+
+
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+    
+
+
